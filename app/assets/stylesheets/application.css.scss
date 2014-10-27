@@ -16,3 +16,53 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+html {
+	height: 100%;
+}
+
+body {
+	background: -webkit-linear-gradient(90deg, #616161 10%, #9bc5c3 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #616161 10%, #9bc5c3 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #616161 10%, #9bc5c3 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #616161 10%, #9bc5c3 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #616161 10%, #9bc5c3 90%); /* W3C */
+}
+
+.navbar-default {
+	background: rgba(250, 250, 250, 0.5);
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
+	border: none;
+	border-radius: 0;
+	.navbar-header {
+		.navbar-brand {
+			color: white;
+			font-size: 20px;
+			text-transform: uppercase;
+			font-weight: 700;
+			letter-spacing: -1px;
+		}
+	}
+	.navbar-link {
+		line-height: 3.5;
+		color: rgb(48, 181, 199);
+	}
+}
+
+#index_workouts {
+	h2 {
+		margin-bottom: 0;
+		font-weight: 100;
+		a {
+			color: white;
+		}
+	}
+	h3 {
+		margin: 0;
+		font-size: 18px;
+		span {
+			color: rgb(48, 181, 199);
+		}
+	}
+}
