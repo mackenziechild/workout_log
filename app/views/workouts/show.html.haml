@@ -4,6 +4,13 @@
 	%p= @workout.mood
 	%p= @workout.length
 
+#exercises
+	%h2 Exercises
+	= render @workout.exercises
+
+	%h3 Add an exercise
+	= render "exercises/form"
+
 = link_to "Back", root_path
 = link_to "Edit", edit_workout_path(@workout)
 = link_to "Delete", workout_path(@workout), method: :delete, data: { confirm: "Are you sure?" }
